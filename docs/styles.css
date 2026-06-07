@@ -461,23 +461,26 @@ h3 {
   font-weight: 800;
 }
 
-.facebook-link {
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.social-link {
   display: inline-flex;
-  width: 100%;
   min-height: 48px;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: 12px;
   padding: 10px 16px;
-  color: #1877f2;
-  border: 1px solid rgba(24, 119, 242, 0.22);
   border-radius: 6px;
   background: #ffffff;
   font-weight: 800;
 }
 
-.facebook-link span {
+.social-link span {
   display: grid;
   width: 28px;
   height: 28px;
@@ -491,10 +494,34 @@ h3 {
   line-height: 1;
 }
 
-.facebook-link:hover,
-.facebook-link:focus-visible {
+.social-link.facebook {
+  color: #1877f2;
+  border: 1px solid rgba(24, 119, 242, 0.22);
+}
+
+.social-link.facebook span {
+  background: #1877f2;
+}
+
+.social-link.youtube {
+  color: #ff0033;
+  border: 1px solid rgba(255, 0, 51, 0.22);
+}
+
+.social-link.youtube span {
+  background: #ff0033;
+  font-size: 0.95rem;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
   border-color: #1877f2;
   outline: none;
+}
+
+.social-link.youtube:hover,
+.social-link.youtube:focus-visible {
+  border-color: #ff0033;
 }
 
 .form-note {
@@ -555,6 +582,11 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+.gallery-item-poster img {
+  object-fit: contain;
+  background: #fbf0e7;
 }
 
 .gallery-item figcaption {
