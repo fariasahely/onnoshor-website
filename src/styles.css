@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --ink: #182321;
   --muted: #5d6965;
   --paper: #fbf7ee;
@@ -172,7 +172,7 @@ a {
 
 .hero-bg {
   z-index: -2;
-  background-image: url("assets/onnoshor-hero.png");
+  background-image: url("./assets/onnoshor-hero.png");
   background-position: center;
   background-size: cover;
 }
@@ -854,3 +854,4 @@ address {
     text-align: left;
   }
 }
+
